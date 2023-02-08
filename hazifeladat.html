@@ -33,6 +33,12 @@
             background-color: black;
             margin: 50px;
         }
+        #bemasolas{
+            text-align: center;
+            margin: auto;
+            height: 300px;
+            width: 300px;
+        }
     </style>
 </head>
 <body>
@@ -54,8 +60,34 @@
 
         <div class="negyzet"></div>
 
+
+
+        <div> mate vagyok
+            <div> izmos vagyok
+                <div>
+                   <h1>dagadt vagyok</h1>
+                   <h2>fáradt vagyok</h2>
+                </div>
+            </div>
+
+        </div>
+
     </div>
 
+    <input type="text" id="input2">
+    <button type="button" id="szam">nyomj meg</button>
+    <div id="bemasolas"></div>
     
+    <script>
+        let szam2 = document.getElementById("szam");
+        let bemasolas = document.getElementById("bemasolas");
+
+        
+        szam2.addEventListener("click", function(){
+            let inputka = document.getElementById("input2").value;
+            bemasolas.innerText = inputka;
+        });
+       
+    </script>
 </body>
 </html>
